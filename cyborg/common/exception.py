@@ -420,3 +420,7 @@ class NotAcceptable(CyborgException):
 
 class FPGAProgramError(CyborgException):
     _msg_fmt = _("FPGA programming failed with return %(ret)s.")
+
+
+class PciDeviceNotFoundById(NotFound):
+    _msg_fmt = _("PCI device %(id)s not found")
